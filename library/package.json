@@ -1,0 +1,20 @@
+{
+  "name": "competitiveprogrammingsnippets",
+  "displayName": "CompetitiveProgrammingSnippets",
+  "description": "goodbaton's snippets for competitive programming",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cpp",
+        "path": "./snippets.json"
+      }
+    ]
+  }
+}
