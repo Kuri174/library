@@ -1,7 +1,7 @@
 {
   "name": "competitiveprogrammingsnippets",
   "displayName": "CompetitiveProgrammingSnippets",
-  "description": "Kuri's snippets for competitive programming",
+  "description": "goodbaton's snippets for competitive programming",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.42.0"
