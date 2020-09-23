@@ -4,5 +4,7 @@
         "iostream": "cpp"
     },
     "editor.snippetSuggestions": "top",
-    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 2}"
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 2}",
+    "explorer.sortOrder": "type"
+
 }
