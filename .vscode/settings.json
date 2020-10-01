@@ -1,10 +1,15 @@
 {
     "git.ignoreLimitWarning": true,
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ostream": "cpp"
     },
+
+    "editor.tabCompletion": "on",
     "editor.snippetSuggestions": "top",
+
     "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 2}",
-    "explorer.sortOrder": "type"
+    "explorer.sortOrder": "type",
+    "C_Cpp.autocomplete": "Disabled"
 
 }

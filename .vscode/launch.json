@@ -1,21 +1,12 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++-10 - アクティブ ファイルのビルドとデバッグ",
-            "type": "cppdbg",
+            "name": "lldb Debug", //nameは何でも大丈夫です
+            "type": "lldb", //typeをlldbにすることでCodeLLDBが使えるそうです
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${workspaceFolder}/contest/A",
             "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: g++-10 build active file"
         }
     ]
 }
