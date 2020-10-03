@@ -2,7 +2,8 @@
     "git.ignoreLimitWarning": true,
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "thread": "cpp"
     },
 
     "editor.tabCompletion": "on",
@@ -10,6 +11,6 @@
 
     "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 2}",
     "explorer.sortOrder": "type",
-    "C_Cpp.autocomplete": "Disabled"
+    //"C_Cpp.autocomplete": "Disabled"
 
 }
