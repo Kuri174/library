@@ -3,7 +3,8 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "charconv": "cpp"
     },
 
     "editor.tabCompletion": "on",
