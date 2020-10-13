@@ -4,14 +4,11 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "thread": "cpp",
-        "charconv": "cpp",
-        "iosfwd": "cpp"
+        "charconv": "cpp"
     },
 
-    "editor.fontSize": 16,
     "editor.tabCompletion": "on",
     "editor.snippetSuggestions": "top",
-    //"editor.fontFamily": "Ricty Diminished",
 
     "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 2}",
     "explorer.sortOrder": "type",
