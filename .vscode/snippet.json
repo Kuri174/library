@@ -238,7 +238,7 @@
 			"  int inv(int n, int p = mod-2){ // a/n ≡ a*n^(p-2) nとpは互いに素",
 			"    int r = 1;",
 			"    for(; p > 0; p >>= 1){",
-			"      if(p & 1LL) r = r * n % mod;",
+			"      if(p & 1ll) r = r * n % mod;",
 			"      n = n * n % mod;",
 			"    }",
 			"    return r; // r = n^p % mod",
