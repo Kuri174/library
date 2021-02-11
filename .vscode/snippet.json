@@ -74,7 +74,7 @@
 		"description": "comment"
 	},
 	"for(i, n)": {
-		"prefix": "for",
+		"prefix": "repeat",
 		"body": [
 			"for (int ${1:i} = 0; ${1:i} < ${2:n}; ${1:i}++) {",
 			"  $0",
@@ -83,7 +83,7 @@
 		"description": "for"
 	},
 	"dx dy": {
-		"prefix": "for",
+		"prefix": "repeat4",
 		"body": [
 			"int dy[4] = {1, 0, -1, 0}, dx[4] = {0, 1, 0, -1};",
 			"for (int i = 0; i < 4; i++) {",
@@ -114,6 +114,13 @@
 			"push_back($0)"
 		],
 		"description": "push_back"
+	},
+	"edge": {
+		"prefix": "edge",
+		"body": [
+			"struct edge { int to, cost; };"
+		],
+		"description": "edge"
 	},
 	"erase_vector": {
 		"prefix": "erase",
@@ -147,6 +154,53 @@
 			"}"
 		],
 		"description": "binary_search"
+	},
+	"power": {
+		"prefix": "power",
+		"body": [
+			"int power(int n, int p) {",
+			"  int r = 1;",
+			"  for (; p > 0; p >>= 1) {",
+			"    if (p & 1ll) r = r * n % mod;",
+			"    n = n * n % mod;",
+			"  }",
+			"  return r;",
+			"}"
+		],
+		"description": "power"
+	},
+	"invese": {
+		"prefix": "inverse",
+		"body": [
+			"int inv(int n, int p = mod - 2) {",
+			"  int r = 1;",
+			"  for (; p > 0; p >>= 1) {",
+			"    if (p & 1LL) r = r * n % mod;",
+			"    n = n * n % mod;",
+			"  }",
+			"  return r;",
+			"}"
+		],
+		"description": "inverse"
+	},
+	"sanbun": {
+		"prefix": "sanbun",
+		"body": [
+			"auto f = [&](int x){",
+			"  return x;",
+			"};",
+			"",
+			"int left = 0, right = inf;",
+			"while (right - left > 10) {",
+			"  int t1 = (left * 2 + right) / 3;",
+			"  int t2 = (left + right * 2) / 3;",
+			"  if (f(t1) > f(t2))",
+			"    left = t1;",
+			"  else",
+			"    right = t2;",
+			"}"
+		],
+		"description": "sanbun"
 	},
 	"__builtin_popcountll": {
 		"prefix": "popcount",
@@ -238,7 +292,7 @@
 			"  int inv(int n, int p = mod-2){ // a/n ≡ a*n^(p-2) nとpは互いに素",
 			"    int r = 1;",
 			"    for(; p > 0; p >>= 1){",
-			"      if(p & 1ll) r = r * n % mod;",
+			"      if(p & 1LL) r = r * n % mod;",
 			"      n = n * n % mod;",
 			"    }",
 			"    return r; // r = n^p % mod",
