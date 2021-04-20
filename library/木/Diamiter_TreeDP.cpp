@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-#ifdef LOCAL_DEBUG
-  #include "LOCAL_DEBUG.hpp"
+#ifdef _DEBUG
+  #include "_DEBUG.hpp"
 #endif
 #define int long long
 struct edge{ int to, cost; };

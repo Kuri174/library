@@ -3,18 +3,30 @@
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
 	// same ids are connected.
-	"競プロ用template": {
-		"prefix": "temp",
+	"競技プログラミング用テンプレート": {
+	"prefix": "temp",
 		"body": [
 			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
 			"#ifdef _DEBUG",
 			"#include \"_DEBUG.hpp\"",
 			"#endif",
 			"#define int long long",
-			"using namespace std;",
+			"",
 			"using P = pair<int, int>;",
-			"const int inf = 2e18;",
+			"const long long inf = 2e18;",
 			"const int mod = 1e9 + 7;",
+			"",
+			"struct IoSetup {",
+			"  IoSetup() {",
+			"    cin.tie(nullptr);",
+			"    ios::sync_with_stdio(false);",
+			"    cout << fixed << setprecision(10);",
+			"    cerr << fixed << setprecision(10);",
+			"  }",
+			"} iosetup;",
+			"#define endl '\\n'",
 			"",
 			"template <typename T>",
 			"istream &operator>>(istream &is, vector<T> &v) {",
@@ -43,13 +55,13 @@
 			"}",
 			"",
 			"signed main() {",
-			"  ",
-			"  $0",
 			"",
+			"  $0",
+			"  ",
 			"  return 0;",
 			"}"
 		],
-		"description": "競プロ用template"
+	"description": "temp"
 	},
 	"IoSetup": {
 		"prefix": "iosetup",
@@ -62,14 +74,15 @@
 			"    cerr << fixed << setprecision(10);",
 			"  }",
 			"} iosetup;",
-			"#define endl '\\n'",
+			"#define endl '\\n'"
 		],
 		"description": "IoSetup"
 	},
 	"comment": {
 		"prefix": "commet",
 		"body": [
-			"/* ----- $1 ----- */$0"
+			"/* ----- $1 ----- */$0",
+			"/* ----- $2 ----- */$0"
 		],
 		"description": "comment"
 	},

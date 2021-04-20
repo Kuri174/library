@@ -2,8 +2,8 @@
 using namespace std;
 #define int long long
 
-#ifdef LOCAL_DEBUG
-#include "LOCAL_DEBUG.hpp"
+#ifdef _DEBUG
+#include "_DEBUG.hpp"
 #endif
 
 const int mod = 1e9 + 7;

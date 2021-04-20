@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-#ifdef LOCAL_DEBUG
-  #include "LOCAL_DEBUG.hpp"
+#ifdef _DEBUG
+  #include "_DEBUG.hpp"
 #endif
 #define int long long
 //https://atcoder.jp/contests/abc160/tasks/abc160_f

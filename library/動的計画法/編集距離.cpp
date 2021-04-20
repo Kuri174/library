@@ -2,8 +2,8 @@
 using namespace std;
 #define int long long
 
-#ifdef LOCAL_DEBUG
-  #include "LOCAL_DEBUG.hpp"
+#ifdef _DEBUG
+  #include "_DEBUG.hpp"
 #endif
 
 int EditDistance(string a,string b){
