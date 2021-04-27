@@ -1,6 +1,8 @@
-/.DS_Store
-/contest
-/task
-.vscode/.DS_Store
+.vscode/
+/contest/
 library/.DS_Store
 library/tenka1-2020-master/.DS_Store
+library/tenka1-2021-master/.DS_Store
+/task
+memo.txt
+memo.csv
