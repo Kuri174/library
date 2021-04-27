@@ -60,8 +60,12 @@ Point operator*(const Point &p, const Real &d) {
   return Point(real(p) * d, imag(p) * d);
 }
 
+Point operator/(const Point &p, const Real &d) {
+  return Point(real(p) / d, imag(p) / d);
+}
+
 // rotate point p counterclockwise by theta rad
-Point rotate(Real theta, const Point &p) {
+Point rotate(const Point &p, Real theta) {  // 360° / N = 2π / N
   return Point(cos(theta) * real(p) - sin(theta) * imag(p),
                sin(theta) * real(p) + cos(theta) * imag(p));
 }

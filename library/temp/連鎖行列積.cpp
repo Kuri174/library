@@ -22,8 +22,6 @@ template <class T, class V>
 typename enable_if<is_class<T>::value != 0>::type fill(T &t, const V &v) {
   for (auto &e : t) fill(e, v);
 }
-// auto v = make_vec<int>(h, w);
-// fill(v, 0);
 
 int calc(int x, int y) {
   string sx = to_string(x), sy = to_string(y);
